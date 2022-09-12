@@ -1,1 +1,1 @@
-### Rebuilding My Portfolio using React.js ... ⚒
+### Updating and Rebuilding My Portfolio using React.js ... ⚒
