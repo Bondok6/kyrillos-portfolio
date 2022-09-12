@@ -1,20 +1,20 @@
-import tasteFoodImg from '../assets/images/taste-food.PNG';
-import youtubeImg from '../assets/images/youtube.PNG';
-import todoListJsImg from '../assets/images/todo-list.PNG';
-import spaceTravelImg from '../assets/images/space-travelers.PNG';
-import natoursImg from '../assets/images/natours.PNG';
-import mathMagiciansImg from '../assets/images/math-magicians.PNG';
-import leaderboardImg from '../assets/images/Leaderboard.PNG';
-import greenTravelImg from '../assets/images/green-travel.PNG';
-import awesomeBooksImg from '../assets/images/awesome-books.PNG';
-import countriesImg from '../assets/images/countries.PNG';
-import maptyImg from '../assets/images/mapty-app.PNG';
-import pigGameImg from '../assets/images/pigGame.PNG';
-import bankistImg from '../assets/images/Bankist.PNG';
-import expenseTrackerImg from '../assets/images/expense-tracker.PNG';
-import zenvaImg from '../assets/images/zenva.png';
-import qualbyImg from '../assets/images/qualby.jpg';
-import guessGameImg from '../assets/images/guessGame.PNG';
+import tasteFoodImg from '../assets/images/projects/taste-food.PNG';
+import youtubeImg from '../assets/images/projects/youtube.PNG';
+import todoListJsImg from '../assets/images/projects/todo-list.PNG';
+import spaceTravelImg from '../assets/images/projects/space-travelers.PNG';
+import natoursImg from '../assets/images/projects/natours.PNG';
+import mathMagiciansImg from '../assets/images/projects/math-magicians.PNG';
+import leaderboardImg from '../assets/images/projects/Leaderboard.PNG';
+import greenTravelImg from '../assets/images/projects/green-travel.PNG';
+import awesomeBooksImg from '../assets/images/projects/awesome-books.PNG';
+import countriesImg from '../assets/images/projects/countries.PNG';
+import maptyImg from '../assets/images/projects/mapty-app.PNG';
+import pigGameImg from '../assets/images/projects/pigGame.PNG';
+import bankistImg from '../assets/images/projects/Bankist.PNG';
+import expenseTrackerImg from '../assets/images/projects/expense-tracker.PNG';
+import zenvaImg from '../assets/images/projects/zenva.png';
+import qualbyImg from '../assets/images/projects/qualby.jpg';
+import guessGameImg from '../assets/images/projects/guessGame.PNG';
 
 export const projects = [
   {
