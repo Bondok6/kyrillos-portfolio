@@ -1,47 +1,18 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
+import MouseHoverAnimation from '../utils/mouse-hover-animation';
+import Heading from '../utils/heading';
 
 const Home = () => {
   const headingRef = useRef(null);
+  const cRef = useRef(null);
 
-  useEffect(() => {
-    const heading = "Hi,-I'm Kyrillos,-Frontend Developer";
-    const headingLetters = heading.split('');
-
-    headingRef.current.innerHTML = '';
-
-    headingLetters.forEach((letter, ind) => {
-      if (letter === '-') {
-        headingRef.current.innerHTML += '<br>';
-        letter = '';
-      }
-      if (letter === 'K') {
-        headingRef.current.innerHTML += `<span class="letter_one">K</span><span class="letter_two">K</span>`;
-        letter = '';
-      }
-      if (
-        (letter === 'y' && headingLetters[ind + 1] === 'r') ||
-        (letter === 'r' && headingLetters[ind + 1] === 'i') ||
-        (letter === 'i' && headingLetters[ind + 1] === 'l') ||
-        (letter === 'l' && headingLetters[ind + 1] === 'l') ||
-        (letter === 'l' && headingLetters[ind - 1] === 'l') ||
-        (letter === 'o' && headingLetters[ind + 1] === 's') ||
-        (letter === 's' && headingLetters[ind - 1] === 'o') ||
-        (letter === ',' && headingLetters[ind - 1] === 's')
-      ) {
-        headingRef.current.innerHTML += `<span class="others letter">${letter}</span>`;
-        letter = '';
-      }
-
-      const span = document.createElement('span');
-      span.textContent = letter;
-      span.classList.add('letter');
-      headingRef.current.appendChild(span);
-    });
-  }, []);
+  Heading(headingRef);
+  MouseHoverAnimation(cRef);
 
   return (
     <section className="home">
       <h1 className="heading" ref={headingRef}></h1>
+      <canvas id="c" ref={cRef}></canvas>
     </section>
   );
 };
