@@ -1,0 +1,60 @@
+.home {
+  .heading {
+    color: $white-clr;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+
+    .letter:hover {
+      color: $secondary-clr;
+    }
+
+    .letter_one {
+      color: $primary-clr;
+    }
+
+    .letter_two {
+      color: $secondary-clr;
+      position: relative;
+      left: -28px;
+    }
+
+    .others {
+      position: relative;
+      left: -28px;
+    }
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(1, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(1, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.rabberBand {
+  animation-name: rubberBand;
+}
