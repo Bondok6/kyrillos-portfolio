@@ -1,5 +1,12 @@
+import { projects } from '../utils/projects';
+
 const Home = () => {
-  return <div>Home</div>;
+  console.log(projects);
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
 };
 
 export default Home;
