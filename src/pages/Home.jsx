@@ -10,7 +10,7 @@ const Home = () => {
   MouseHoverAnimation(cRef);
 
   return (
-    <section className="home">
+    <section className="home container">
       <h1 className="heading" ref={headingRef}></h1>
       <canvas id="c" ref={cRef}></canvas>
     </section>
