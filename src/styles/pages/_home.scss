@@ -1,11 +1,14 @@
 .home {
   height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
+  margin-left: 12vw;
+
+  @media (max-width: 1200px) {
+    margin-left: 0;
+  }
 
   .heading {
-    color: $white-clr;
     font-size: 3rem;
     z-index: 1;
 
@@ -27,6 +30,26 @@
       position: relative;
       left: -28px;
     }
+
+    &::before,
+    &::after {
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 1.2rem;
+      color: $tags-text-clr;
+      position: absolute;
+    }
+
+    &::before {
+      content: '<h1>';
+      position: absolute;
+      top: 30%;
+    }
+
+    &::after {
+      content: '</h1>';
+      position: absolute;
+      bottom: 30%;
+    }
   }
 
   canvas {
@@ -35,5 +58,30 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &::before,
+  &::after {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.2rem;
+    color: $tags-text-clr;
+    padding: 1rem;
+    margin-left: 10vw;
+    @media (max-width: 1200px) {
+      margin-left: 0;
+    }
+    position: absolute;
+  }
+
+  &::before {
+    content: '<body>';
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: '</body>';
+    bottom: 0;
+    left: 0;
   }
 }

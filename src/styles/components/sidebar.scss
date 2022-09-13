@@ -1,0 +1,13 @@
+.sidebar {
+  width: 10vw;
+  height: 100vh;
+  background-color: $bg-nav-clr;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
