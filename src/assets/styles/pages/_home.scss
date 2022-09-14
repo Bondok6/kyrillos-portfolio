@@ -1,12 +1,9 @@
 .home {
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 12vw;
-
-  @media (max-width: 1200px) {
-    margin-left: 0;
-  }
 
   .heading {
     font-size: 7rem;
@@ -42,7 +39,7 @@
     &::before {
       content: '<h1>';
       position: absolute;
-      top: 30%;
+      top: 20%;
     }
 
     &::after {
@@ -67,9 +64,6 @@
     color: $tags-text-clr;
     padding: 1rem;
     margin-left: 10vw;
-    @media (max-width: 1200px) {
-      margin-left: 0;
-    }
     position: absolute;
   }
 
@@ -83,5 +77,30 @@
     content: '</body>';
     bottom: 0;
     left: 0;
+  }
+
+  @media (max-width: 1200px) {
+    &,
+    &::before,
+    &::after {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .heading {
+      font-size: 4rem;
+      .letter_two {
+        left: -20px;
+      }
+      .others {
+        left: -17px;
+      }
+
+      &::after {
+        bottom: 45%;
+        right: 5%;
+      }
+    }
   }
 }
