@@ -5,7 +5,9 @@ const Sidebar = () => {
   return (
     <nav className="sidebar">
       <div className="sidebar__logo">
-        <img src={sidbarLogo} alt="logo" />
+        <Link to="/">
+          <img src={sidbarLogo} alt="logo" />
+        </Link>
       </div>
 
       <ul className="sidebar__list">
