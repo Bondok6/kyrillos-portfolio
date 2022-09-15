@@ -17,7 +17,6 @@
   text-transform: uppercase;
   color: $secondary-clr;
   text-align: center;
-
   display: inline-block;
   position: relative;
   width: 100%;
@@ -25,7 +24,7 @@
   max-width: 220px;
   line-height: 50px;
   z-index: 4;
-  transform: translateY(0px);
+  transform: translateY(0);
 
   div {
     height: 100%;

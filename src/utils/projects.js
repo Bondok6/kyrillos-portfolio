@@ -16,7 +16,7 @@ import zenvaImg from '../assets/images/projects/zenva.png';
 import qualbyImg from '../assets/images/projects/qualby.jpg';
 import guessGameImg from '../assets/images/projects/guessGame.PNG';
 
-export const projects = [
+const projects = [
   {
     img: tasteFoodImg,
     title: 'Taste Food',
@@ -152,3 +152,5 @@ export const projects = [
     github: 'https://github.com/Bondok6/Guess-My-Number',
   },
 ];
+
+export default projects;

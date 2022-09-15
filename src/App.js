@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, About, Work, Contact } from './pages';
+import {
+  Home, About, Work, Contact,
+} from './pages';
 import Sidebar from './components/Navbar/Sidebar';
 import MenuIcon from './components/Navbar/MenuIcon';
 import Menu from './components/Navbar/Menu';
