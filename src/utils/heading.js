@@ -13,7 +13,8 @@ const Heading = (headingRef) => {
         letter = '';
       }
       if (letter === 'K') {
-        headingRef.current.innerHTML += `<span class="letter_one">K</span><span class="letter_two">K</span>`;
+        headingRef.current.innerHTML +=
+          '<span class="letter_one">K</span><span class="letter_two">K</span>';
         letter = '';
       }
       if (

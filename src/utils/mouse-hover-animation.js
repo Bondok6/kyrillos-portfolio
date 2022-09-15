@@ -5,8 +5,11 @@ const MouseHoverAnimation = (cRef) => {
     const c = cRef.current;
     const ctx = c.getContext('2d');
 
-    const WIDTH = (c.width = window.innerWidth);
-    const HEIGHT = (c.height = window.innerHeight);
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    const WIDTH = c.width;
+    const HEIGHT = c.height;
+
     const mouse = {
       x: 0,
       y: 0,
@@ -28,7 +31,7 @@ const MouseHoverAnimation = (cRef) => {
 
     Particle.prototype = {
       constructor: Particle,
-      update: function () {
+      update() {
         if (this.life > 0) {
           this.life -= 2;
           if (this.life < 50) {
@@ -42,25 +45,16 @@ const MouseHoverAnimation = (cRef) => {
           }
         }
       },
-      render: function (ctx) {
+      render(ctx) {
         ctx.save();
-        ctx.fillStyle =
-          'rgba(' +
-          this.r +
-          ', ' +
-          this.g +
-          ', ' +
-          this.b +
-          ', ' +
-          this.a +
-          ')';
+        ctx.fillStyle = `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a})`;
         ctx.translate(this.x, this.y);
         ctx.beginPath();
         ctx.arc(0, 0, this.radius, 0, Math.PI * 2);
         ctx.fill();
         ctx.restore();
       },
-      reset: function (tx, ty) {
+      reset(tx, ty) {
         this.x = tx;
         this.y = ty;
         this.vx = Math.random() * 4 - 1;
@@ -73,20 +67,20 @@ const MouseHoverAnimation = (cRef) => {
       },
     };
 
-    let particles = [];
+    const particles = [];
     let particle = null;
-    let particleCount = 500;
+    const particleCount = 500;
     let tx = 0;
     let ty = HEIGHT / 2;
     let idx = 0;
-    let temp = {
+    const temp = {
       vx: Math.random() * 4 - 2,
       vy: Math.random() * 4 - 2,
       x: WIDTH / 2,
       y: HEIGHT / 2,
     };
 
-    for (var i = 0; i < particleCount; i++) {
+    for (let i = 0; i < particleCount; i += 1) {
       particle = new Particle();
       particles.push(particle);
     }
@@ -99,8 +93,8 @@ const MouseHoverAnimation = (cRef) => {
       if (++idx >= particles.length) idx = 0;
     }
 
-    c.addEventListener('mousemove', function (e) {
-      let rect = c.getBoundingClientRect();
+    c.addEventListener('mousemove', (e) => {
+      const rect = c.getBoundingClientRect();
       mouse.x = e.clientX - rect.left;
       mouse.y = e.clientY - rect.top;
       mouse.isMoved = true;
@@ -138,7 +132,7 @@ const MouseHoverAnimation = (cRef) => {
         spawn(temp);
       }
 
-      for (let i = 0; i < particleCount; i++) {
+      for (let i = 0; i < particleCount; i += 1) {
         particle = particles[i];
         particle.update();
         particle.render(ctx);
