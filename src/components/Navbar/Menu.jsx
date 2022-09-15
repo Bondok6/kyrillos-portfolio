@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import menuLogo from '../../assets/images/logo-cover.png';
+import menuLogo from '../../assets/images/nav-logo.PNG';
 
 const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -13,13 +13,13 @@ const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
 
       <ul className="menu__list" onClick={toggleMenu}>
         <li className="menu__list-item">
-          <Link to="/about">About</Link>
+          <Link to="/about">About Me</Link>
         </li>
         <li className="menu__list-item">
-          <Link to="/work">Work</Link>
+          <Link to="/work">My Work</Link>
         </li>
         <li className="menu__list-item">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
 
