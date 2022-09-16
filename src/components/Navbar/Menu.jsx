@@ -13,7 +13,7 @@ const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
 
       <ul className="menu__list" onClick={toggleMenu}>
         <li className="menu__list-item">
-          <Link to="/about">About Me</Link>
+          <a href="/about">About Me</a>
         </li>
         <li className="menu__list-item">
           <Link to="/work">My Work</Link>
