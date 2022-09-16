@@ -8,6 +8,7 @@
   .heading {
     font-size: 7rem;
     z-index: 1;
+    position: relative;
 
     .letter:hover {
       color: $secondary-clr;
@@ -38,14 +39,13 @@
 
     &::before {
       content: '<h1>';
-      position: absolute;
-      top: 20%;
+      left: 0;
+      top: -25px;
     }
 
     &::after {
       content: '</h1>';
-      position: absolute;
-      bottom: 30%;
+      bottom: -25px;
     }
   }
 
