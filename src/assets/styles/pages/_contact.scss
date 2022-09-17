@@ -1,0 +1,153 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 12vw;
+
+  &::before,
+  &::after {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2rem;
+    color: $tags-text-clr;
+    padding: 1rem;
+    margin-left: 10vw;
+    position: absolute;
+  }
+
+  &::before {
+    content: '<body>';
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: '</body>';
+    bottom: 0;
+    left: 0;
+  }
+
+  &__info {
+    width: 50%;
+
+    h2 {
+      font-size: 5rem;
+      color: $secondary-clr;
+      position: relative;
+
+      &::before,
+      &::after {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 1.5rem;
+        color: $tags-text-clr;
+        position: absolute;
+      }
+
+      &::before {
+        content: '<h2>';
+        left: 0;
+        top: -25px;
+      }
+
+      &::after {
+        content: '</h2>';
+        bottom: -25px;
+        left: 0;
+      }
+    }
+
+    .form-container {
+      margin-top: 6rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 2rem;
+        color: $tags-text-clr;
+        position: absolute;
+      }
+
+      &::before {
+        content: '<form>';
+        left: 0;
+        top: -30px;
+      }
+
+      &::after {
+        content: '</form>';
+        bottom: 25px;
+        left: 0;
+      }
+
+      form {
+        font-size: 1.5rem;
+        overflow: hidden;
+
+        label {
+          display: block;
+          border-bottom: 2px solid $secondary-clr;
+          width: 80%;
+          padding: 0 10px;
+          margin-bottom: 1rem;
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        input {
+          width: 80%;
+          border: none;
+          outline: none;
+          background-color: $bg-input-clr;
+          color: $nav-text-clr;
+          padding: 10px;
+          height: 25px;
+
+          &:focus + label {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        textarea {
+          width: 80%;
+          height: 150px;
+          background-color: $bg-input-clr;
+          color: $nav-text-clr;
+          border: none;
+          resize: none;
+          outline: none;
+          padding: 10px;
+
+          &:focus + label {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Popup width is defined in JS using options */
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: $bg-input-clr;
+  color: $secondary-clr;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+  cursor: pointer;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.contact .contact__info form input:focus + .label_name {
+  opacity: 1;
+  transform: translateX(0%);
+}

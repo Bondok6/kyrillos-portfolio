@@ -25,6 +25,15 @@
   line-height: 50px;
   z-index: 4;
   transform: translateY(0);
+  cursor: pointer;
+
+  &--submit {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    float: right;
+    margin-right: 17%;
+  }
 
   div {
     height: 100%;
