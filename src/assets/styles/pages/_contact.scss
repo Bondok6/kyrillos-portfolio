@@ -45,12 +45,12 @@
       &::before {
         content: '<h2>';
         left: 0;
-        top: -25px;
+        top: -20px;
       }
 
       &::after {
         content: '</h2>';
-        bottom: -25px;
+        bottom: -20px;
         left: 0;
       }
     }
@@ -131,12 +131,54 @@
       }
     }
   }
-}
 
-#map {
-  width: 50%;
-  height: 100vh;
-  margin-top: -4rem;
+  #map {
+    width: 50%;
+    height: 100vh;
+    margin-top: -4rem;
+    z-index: 1;
+  }
+
+  @media (max-width: 1200px) {
+    &,
+    &::before,
+    &::after {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+
+    &__info {
+      width: 100%;
+    }
+
+    #map {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__info {
+      .form-container {
+        form {
+          label {
+            width: 100%;
+          }
+
+          input {
+            width: 100%;
+          }
+
+          textarea {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Popup width is defined in JS using options */

@@ -33,6 +33,10 @@
     background-color: transparent;
     float: right;
     margin-right: 17%;
+
+    @media (max-width: 500px) {
+      margin-right: 0;
+    }
   }
 
   div {
