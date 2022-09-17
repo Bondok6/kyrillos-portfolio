@@ -1,0 +1,108 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12vw;
+
+  .heading {
+    font-size: 7rem;
+    z-index: 1;
+    position: relative;
+
+    .letter:hover {
+      color: $secondary-clr;
+    }
+
+    .letter_one {
+      color: $primary-clr;
+    }
+
+    .letter_two {
+      color: $secondary-clr;
+      position: relative;
+      left: -36px;
+    }
+
+    .others {
+      position: relative;
+      left: -33px;
+    }
+
+    &::before,
+    &::after {
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 2rem;
+      color: $tags-text-clr;
+      position: absolute;
+    }
+
+    &::before {
+      content: '<h1>';
+      left: 0;
+      top: -25px;
+    }
+
+    &::after {
+      content: '</h1>';
+      bottom: -25px;
+    }
+  }
+
+  canvas {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before,
+  &::after {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2rem;
+    color: $tags-text-clr;
+    padding: 1rem;
+    margin-left: 10vw;
+    position: absolute;
+  }
+
+  &::before {
+    content: '<body>';
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: '</body>';
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (max-width: 1200px) {
+    &,
+    &::before,
+    &::after {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .heading {
+      font-size: 4rem;
+
+      .letter_two {
+        left: -20px;
+      }
+
+      .others {
+        left: -17px;
+      }
+
+      &::after {
+        bottom: 45%;
+        right: 5%;
+      }
+    }
+  }
+}

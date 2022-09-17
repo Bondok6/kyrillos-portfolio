@@ -1,0 +1,17 @@
+// abstracts
+@import 'abstracts/normalize';
+@import 'abstracts/variables';
+@import 'abstracts/animations';
+
+// base
+@import 'base/base';
+
+// components
+@import 'components/sidebar';
+@import 'components/button';
+@import 'components/menu';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';

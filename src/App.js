@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  Home, About, Work, Contact,
+} from './pages';
+import Sidebar from './components/Navbar/Sidebar';
+import MenuIcon from './components/Navbar/MenuIcon';
+import Menu from './components/Navbar/Menu';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <BrowserRouter>
+      <header>
+        <MenuIcon isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        {isMenuOpen ? (
+          <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        ) : (
+          <Sidebar />
+        )}
       </header>
-    </div>
+
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 

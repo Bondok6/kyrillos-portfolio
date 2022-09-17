@@ -1,0 +1,127 @@
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 12vw;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    h2 {
+      font-size: 5rem;
+      color: $secondary-clr;
+      position: relative;
+
+      &::before,
+      &::after {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 1.5rem;
+        color: $tags-text-clr;
+        position: absolute;
+      }
+
+      &::before {
+        content: '<h2>';
+        left: 0;
+        top: -25px;
+      }
+
+      &::after {
+        content: '</h2>';
+        bottom: -25px;
+        left: 0;
+      }
+    }
+    p {
+      margin-top: 6rem;
+      font-size: 1.6rem;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 2;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 2rem;
+        color: $tags-text-clr;
+        position: absolute;
+      }
+
+      &::before {
+        content: '<p>';
+        left: 0;
+        top: -30px;
+      }
+
+      &::after {
+        content: '</p>';
+        bottom: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &__skills {
+    width: 60%;
+    // border: 1px solid red;
+
+    #tag {
+      background-color: transparent;
+    }
+  }
+
+  &::before,
+  &::after {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2rem;
+    color: $tags-text-clr;
+    padding: 1rem;
+    margin-left: 10vw;
+    position: absolute;
+  }
+
+  &::before {
+    content: '<body>';
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: '</body>';
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (max-width: 1200px) {
+    &,
+    &::before,
+    &::after {
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      margin-left: 0;
+    }
+
+    &__info {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 8rem;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        margin-top: 4rem;
+        font-size: 1.4rem;
+        line-height: 1.6;
+      }
+    }
+
+    &__skills {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
