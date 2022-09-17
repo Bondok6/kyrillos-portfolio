@@ -5,14 +5,12 @@ import SuccessSubmit from './SuccessSubmit';
 
 const Contact = () => {
   useEffect(() => {
-    // Leaflet -> third-party library to display map
-    // const coords = [31.2508271, 32.3189202];
-    // const map = L.map('map').setView(coords, 13);
-    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //   attribution:
-    //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    // }).addTo(map);
-    // L.marker(coords).addTo(map).bindPopup('Hi, I am here 👋').openPopup();
+    const coords = [31.2508271, 32.3189202];
+    const map = L.map('map').setView(coords, 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(
+      map
+    );
+    L.marker(coords).addTo(map).bindPopup('Hi, I am here 👋').openPopup();
   }, []);
 
   const [state, handleSubmit] = useForm('xnqlzkod');
@@ -49,7 +47,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* <div id="map"></div> */}
+      <div id="map"></div>
     </section>
   );
 };
