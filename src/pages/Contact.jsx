@@ -18,7 +18,7 @@ const Contact = () => {
     return <SuccessSubmit />;
   }
   return (
-    <section className="contact container">
+    <section className="contact">
       <div className="contact__info">
         <h2>Contact Me</h2>
         <div className="form-container">

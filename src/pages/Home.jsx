@@ -11,7 +11,7 @@ const Home = () => {
   MouseHoverAnimation(cRef);
 
   return (
-    <section className="home container">
+    <section className="home">
       <h1 className="heading" ref={headingRef}></h1>
 
       <div className="buttons">
