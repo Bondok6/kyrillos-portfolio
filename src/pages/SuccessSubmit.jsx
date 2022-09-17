@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import successImg from '../assets/images/success.svg';
+
 const SuccessSubmit = () => (
-  <section>
-    <h1>Success!</h1>
+  <section className="success-page">
+    <img src={successImg} alt="success-img" />
+    <h1>Your message has been sent successfully.</h1>
     <p>Thank you for submitting your information.</p>
-    Back to <Link to="/">Home</Link>
+    <div>
+      Back to <Link to="/">Home</Link>
+    </div>
   </section>
 );
 export default SuccessSubmit;
