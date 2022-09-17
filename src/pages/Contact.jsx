@@ -27,8 +27,6 @@ const Contact = () => {
             <label></label>
             <input type="email" name="email" placeholder="Email" required />
             <label></label>
-            <input type="text" name="subject" placeholder="Subject" required />
-            <label></label>
             <textarea
               id="message"
               name="message"
@@ -36,13 +34,6 @@ const Contact = () => {
               required
             ></textarea>
             <label></label>
-
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-
             <Button text="Send Message" link="submit" state={state} />
           </form>
         </div>
