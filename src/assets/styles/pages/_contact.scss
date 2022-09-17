@@ -28,7 +28,6 @@
 
   &__info {
     width: 50%;
-
     h2 {
       font-size: 5rem;
       color: $secondary-clr;
@@ -143,40 +142,33 @@
     &,
     &::before,
     &::after {
-      margin-left: 0;
+      margin-left: 10px;
     }
   }
 
   @media (max-width: 768px) {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 
     &__info {
       width: 100%;
+
+      .form-container {
+        form {
+          label,
+          input,
+          textarea {
+            width: 90%;
+          }
+        }
+      }
     }
 
     #map {
       display: none;
-    }
-  }
-
-  @media (max-width: 500px) {
-    &__info {
-      .form-container {
-        form {
-          label {
-            width: 100%;
-          }
-
-          input {
-            width: 100%;
-          }
-
-          textarea {
-            width: 100%;
-          }
-        }
-      }
     }
   }
 }

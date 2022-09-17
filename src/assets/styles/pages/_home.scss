@@ -83,7 +83,7 @@
     &,
     &::before,
     &::after {
-      margin-left: 0;
+      margin-left: 10px;
     }
   }
 
@@ -100,7 +100,6 @@
       }
 
       &::after {
-        bottom: 45%;
         right: 5%;
       }
     }
