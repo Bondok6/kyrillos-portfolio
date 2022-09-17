@@ -517,6 +517,7 @@ if (typeof jQuery !== 'undefined') {
 }
 
 // Skills 3D animations
+
 $(document).ready(function () {
   const entries = [
     { label: 'JavaScript' },
