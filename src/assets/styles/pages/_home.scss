@@ -9,6 +9,7 @@
     font-size: 7rem;
     z-index: 1;
     position: relative;
+    animation: moveInLeft 1s;
 
     .letter:hover {
       color: $secondary-clr;

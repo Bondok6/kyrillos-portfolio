@@ -40,6 +40,15 @@ const Contact = () => {
       </div>
 
       <div id="map"></div>
+
+      <div className="map-info">
+        Kyrillos Hany,
+        <br /> <br /> Egypt, Portsaid. Portfaud <br />
+        <br />
+        <span>
+          <span>@</span>: kyrilloshany99@gmail.com
+        </span>
+      </div>
     </section>
   );
 };

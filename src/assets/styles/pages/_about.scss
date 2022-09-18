@@ -13,6 +13,7 @@
       font-size: 5rem;
       color: $secondary-clr;
       position: relative;
+      animation: moveInRight 1s;
 
       &::before,
       &::after {
@@ -42,6 +43,7 @@
       line-height: 2;
       margin-bottom: 1rem;
       position: relative;
+      animation: moveInLeft 1s;
 
       &::before,
       &::after {
@@ -67,7 +69,8 @@
 
   &__skills {
     width: 60%;
-    // border: 1px solid red;
+    text-align: center;
+    animation: moveInRight 1s;
 
     #tag {
       background-color: transparent;
@@ -102,7 +105,6 @@
     &::after {
       flex-direction: column;
       align-items: center;
-      // justify-content: center;
       margin-left: 0;
     }
 
@@ -123,7 +125,6 @@
     }
 
     &__skills {
-      text-align: center;
       width: 100%;
     }
   }
