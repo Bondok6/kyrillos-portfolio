@@ -43,11 +43,10 @@ const Contact = () => {
 
       <div className="map-info">
         Kyrillos Hany,
-        <br /> <br /> Egypt, Portsaid. Portfaud <br />
-        <br />
-        <span>
-          <span>@</span>: kyrilloshany99@gmail.com
-        </span>
+        <br /> <br />
+        Egypt, Portsaid, Portfaud.
+        <br /> <br />
+        <span>@</span>: kyrilloshany99@gmail.com
       </div>
     </section>
   );
