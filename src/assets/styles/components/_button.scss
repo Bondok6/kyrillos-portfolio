@@ -40,6 +40,18 @@
     }
   }
 
+  &--small {
+    max-width: 120px;
+    animation: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
+    @media (max-width: 600px) {
+      font-size: 1rem;
+      max-width: 100px;
+    }
+  }
+
   div {
     height: 100%;
     width: 100%;

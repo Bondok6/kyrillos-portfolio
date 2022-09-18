@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Button = ({ text, link, state }) => {
+const Button = ({ text, link, state, cn }) => {
   if (link === '/conatct') {
     return (
       <Link to="/contact" className="btn">
@@ -27,7 +27,7 @@ const Button = ({ text, link, state }) => {
     );
   } else {
     return (
-      <a className="btn" href={link} target="_blank" rel="noreferrer">
+      <a className={`btn ${cn}`} href={link} target="_blank" rel="noreferrer">
         <div>
           <span className="bg"></span>
           <span className="base"></span>
