@@ -7,7 +7,10 @@
   &__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
     width: 40%;
+    height: 50vh;
 
     h2 {
       font-size: 5rem;
@@ -69,6 +72,7 @@
 
   &__skills {
     width: 60%;
+    height: 50vh;
     text-align: center;
     animation: moveInRight 1s;
 
