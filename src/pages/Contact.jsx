@@ -17,6 +17,7 @@ const Contact = () => {
   if (state.succeeded) {
     return <SuccessSubmit />;
   }
+
   return (
     <section className="contact">
       <div className="contact__info">
