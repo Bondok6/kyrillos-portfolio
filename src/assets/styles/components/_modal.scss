@@ -10,6 +10,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba($black-clr, 0.5);
   color: $white-clr;
+  animation: fade 0.8s;
 
   @media (max-width: 1200px) {
     width: 90%;
