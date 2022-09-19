@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-
 
 ## Live Demo
 
-> [Kyrillos's Portfolio](kyrillos-portfolio.vercel.app/)
+> [Kyrillos's Portfolio](https://kyrillos-portfolio.vercel.app/)
 
 ## Built with
 
