@@ -16,6 +16,7 @@
 ## Additional Used
 
 - React-Icons
+- 3D-animation
 - Leaflet.js
 - SVG
 - Google Fonts
