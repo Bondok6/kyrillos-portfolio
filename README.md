@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-
 
 ## Live Demo
 
-> comming soon ...
+> [Kyrillos's Portfolio](https://github.com/Bondok6/kyrillos-portfolio)
 
 ## Built with
 
@@ -24,6 +24,7 @@ https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-
 - 3D-animation
 - Leaflet.js
 - Google Fonts
+- Vercel
 
 ## Getting Started
 
