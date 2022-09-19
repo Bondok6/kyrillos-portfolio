@@ -2,6 +2,10 @@
 
 > ### A website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
+
+https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-8cf2-035b88be64b9.mp4
+
+
 ## Live Demo
 
 > ### Check my portofolio : [Live Demo Link]()
@@ -15,10 +19,10 @@
 
 ## Additional Used
 
+- SVG
 - React-Icons
 - 3D-animation
 - Leaflet.js
-- SVG
 - Google Fonts
 
 ## Getting Started
