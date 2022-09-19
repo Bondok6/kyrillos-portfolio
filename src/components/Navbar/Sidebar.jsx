@@ -11,7 +11,7 @@ const Sidebar = () => (
 
     <ul className="sidebar__list">
       <li className="sidebar__list-item">
-        <a href="/about">About</a>
+        <Link to="/about">About</Link>
       </li>
       <li className="sidebar__list-item">
         <Link to="/work">My Work</Link>
