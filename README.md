@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-
 
 ## Live Demo
 
-> ### Check my portofolio : [Live Demo Link]()
+> comming soon ...
 
 ## Built with
 
