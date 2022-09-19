@@ -3,6 +3,7 @@ import menuLogo from '../../assets/images/nav-logo.PNG';
 
 const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <nav className="menu">
       <div className="menu__logo" onClick={toggleMenu}>

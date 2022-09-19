@@ -9,6 +9,7 @@
     font-size: 7rem;
     z-index: 1;
     position: relative;
+    animation: moveInLeft 1s;
 
     .letter:hover {
       color: $secondary-clr;
@@ -83,7 +84,7 @@
     &,
     &::before,
     &::after {
-      margin-left: 0;
+      margin-left: 10px;
     }
   }
 
@@ -100,7 +101,6 @@
       }
 
       &::after {
-        bottom: 45%;
         right: 5%;
       }
     }

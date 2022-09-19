@@ -33,6 +33,7 @@
       font-size: 5rem;
       color: $secondary-clr;
       position: relative;
+      animation: moveInRight 1s;
 
       &::before,
       &::after {
@@ -45,12 +46,12 @@
       &::before {
         content: '<h2>';
         left: 0;
-        top: -25px;
+        top: -20px;
       }
 
       &::after {
         content: '</h2>';
-        bottom: -25px;
+        bottom: -20px;
         left: 0;
       }
     }
@@ -82,6 +83,7 @@
       form {
         font-size: 1.5rem;
         overflow: hidden;
+        animation: moveInLeft 1s;
 
         label {
           display: block;
@@ -129,6 +131,72 @@
           }
         }
       }
+    }
+  }
+
+  #map {
+    width: 50%;
+    height: 100vh;
+    margin-top: -4rem;
+    z-index: 1;
+    animation: moveInRight 1s;
+  }
+
+  .map-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 1rem;
+    right: 1rem;
+    z-index: 500;
+    width: 230px;
+    padding: 20px;
+    color: $white-clr;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    animation: moveInRight 2s;
+
+    span {
+      color: $secondary-clr;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &,
+    &::before,
+    &::after {
+      margin-left: 10px;
+    }
+
+    .map-info {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+    &__info {
+      width: 100%;
+
+      .form-container {
+        form {
+          label,
+          input,
+          textarea {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    #map,
+    .map-info {
+      display: none;
     }
   }
 }

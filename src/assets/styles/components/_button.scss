@@ -26,6 +26,7 @@
   z-index: 4;
   transform: translateY(0);
   cursor: pointer;
+  animation: moveInBottom 1.5s;
 
   &--submit {
     border: none;
@@ -33,6 +34,22 @@
     background-color: transparent;
     float: right;
     margin-right: 17%;
+
+    @media (max-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+
+  &--small {
+    max-width: 120px;
+    animation: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
+    @media (max-width: 600px) {
+      font-size: 1rem;
+      max-width: 100px;
+    }
   }
 
   div {
@@ -105,8 +122,10 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .menu-btn {
+.menu-btn {
+  display: none;
+
+  @media (max-width: 1200px) {
     position: fixed;
     top: 10px;
     right: 10px;

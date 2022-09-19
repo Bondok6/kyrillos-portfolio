@@ -10,8 +10,13 @@
 @import 'components/sidebar';
 @import 'components/button';
 @import 'components/menu';
+@import 'components/backdrop';
+@import 'components/modal';
 
 // Pages
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
+@import 'pages/success-submit';
+@import 'pages/error-page';
+@import 'pages/work';
