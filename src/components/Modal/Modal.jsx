@@ -4,7 +4,7 @@ const Modal = ({ project, closeModal }) => {
   return (
     <div className="modal">
       <div className="modal__header">
-        <img src={project.img} alt="project-img" />
+        <img src={project.img[0]} alt="project-img" />
         <button type="button" className="modal__exit" onClick={closeModal}>
           &times;
         </button>
@@ -18,9 +18,9 @@ const Modal = ({ project, closeModal }) => {
       </div>
       <div className="modal__tech">
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+          {project.tech.map((tech) => (
+            <li key={tech}>{tech}</li>
+          ))}
         </ul>
       </div>
       <div className="modal__footer">

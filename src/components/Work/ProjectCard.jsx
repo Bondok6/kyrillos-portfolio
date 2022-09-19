@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
   return (
     <li>
       <div className="magic-wall_item lazyload">
-        <img src={project.img} alt="project-img" />
+        <img src={project.img[1]} alt="project-img" />
         <div className="hover-conteent"></div>
         <a
           href="#"
