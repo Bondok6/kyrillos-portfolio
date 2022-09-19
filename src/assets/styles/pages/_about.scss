@@ -75,6 +75,7 @@
     height: 50vh;
     text-align: center;
     animation: moveInRight 1s;
+    margin-top: -10rem;
 
     #tag {
       background-color: transparent;
@@ -130,6 +131,7 @@
 
     &__skills {
       width: 100%;
+      margin-top: 0;
     }
   }
 }
