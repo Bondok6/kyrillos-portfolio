@@ -21,12 +21,14 @@ import qualbyImg from '../assets/images/projects/qualby.PNG';
 import qualbyImg2 from '../assets/images/projects/qualby-2.PNG';
 import bankistImg from '../assets/images/projects/Bankist.PNG';
 import bankistImg2 from '../assets/images/projects/Bankist-2.PNG';
+import maptyImg from '../assets/images/projects/mapty-app.PNG';
+import maptyImg1 from '../assets/images/projects/mapty-app-1.PNG';
+import expenseTrackerImg from '../assets/images/projects/expense-tracker-1.PNG';
+import trilloImg from '../assets/images/projects/trillo.PNG';
 
 // import leaderboardImg from '../assets/images/projects/Leaderboard.PNG';
 // import awesomeBooksImg from '../assets/images/projects/awesome-books.PNG';
 // import countriesImg from '../assets/images/projects/countries.PNG';
-// import maptyImg from '../assets/images/projects/mapty-app.PNG';
-// import expenseTrackerImg from '../assets/images/projects/expense-tracker.PNG';
 // import zenvaImg from '../assets/images/projects/zenva.png';
 // import guessGameImg from '../assets/images/projects/guessGame.PNG';
 
@@ -154,12 +156,47 @@ const projects = [
     github: 'https://github.com/Bondok6/Bankist',
     tech: ['JavaScript', 'DOM', 'HTML', 'CSS', 'gh-pages'],
   },
+  {
+    img: [maptyImg1, maptyImg],
+    title: 'Mapty App',
+    description:
+      ' 💡 NOTE: Chrome no longer supports geolocation on insecure origins. To use this app, you need to run it on a secure origin, such as over HTTPS. So, you can run it on localhost. In this app, you can log your running or cycling workouts with location, distance, time, and steps/ minute.You can also see all your workouts on a map. ',
+    live: 'https://bondok6.github.io/Mapty-app/',
+    github: 'https://github.com/Bondok6/Mapty-app',
+    tech: [
+      'JavaScript',
+      'OOP',
+      'Geolocation',
+      'HTML',
+      'CSS',
+      'Leaflet Map',
+      'gh-pages',
+    ],
+  },
+  {
+    img: [expenseTrackerImg, expenseTrackerImg],
+    title: 'Expense Tracker',
+    description:
+      'App helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.',
+    live: 'https://bondok6.github.io/Expense-tracker-app/',
+    github: 'https://github.com/Bondok6/Expense-tracker-app',
+    tech: ['React', 'HTML', 'CSS-Modules', 'gh-pages'],
+  },
+  {
+    img: [trilloImg, trilloImg],
+    title: 'Trillo',
+    description:
+      'A hotel booking website. Pure CSS website to practice advanced CSS/SCSS (SASS) and delve deeper into Flexbox.',
+    live: 'https://bondok6.github.io/trillo/',
+    github: 'https://github.com/Bondok6/trillo',
+    tech: ['SASS/SCSS', 'Animation', 'HTML', 'SVG', 'gh-pages'],
+  },
   // {
   //   img: [zenvaImg, zenvaImg],
   //   title: 'Zenva',
   //   description:
   //     'A website for Zenva, a company that provides a variety of services to the people of the world.',
-  //   live: 'https://bondok6.github.io/Zenva/',
+  //   live: 'https://bondok6.github.io/ZENVA/',
   //   github: 'https://github.com/Bondok6/ZENVA',
   //   tech: ['JavaScript', 'HTML', 'CSS', 'Icons8', 'Heroku'],
   // },
@@ -190,23 +227,7 @@ const projects = [
   //   github: 'https://github.com/Bondok6/countries/',
   //   tech: ['JavaScript', 'HTML', 'CSS', 'API', 'gh-pages'],
   // },
-  // {
-  //   img: [maptyImg, maptyImg],
-  //   title: 'Mapty App',
-  //   description:
-  //     'In this app, you can log your running or cycling workouts with location,distance, time, and steps/minute. You can also see all your workouts on a map.',
-  //   live: 'https://bondok6.github.io/Mapty-app/',
-  //   github: 'https://github.com/Bondok6/Mapty-app',
-  //   tech: ['JavaScript', 'HTML', 'CSS', 'gh-pages'],
-  // },
-  // {
-  //   img: expenseTrackerImg,
-  //   title: 'Expense Tracker',
-  //   description:
-  //     'App helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.',
-  //   live: 'https://bondok6.github.io/Expense-tracker-app/',
-  //   github: 'https://github.com/Bondok6/Expense-tracker-app',
-  // },
+
   // {
   //   img: guessGameImg,
   //   title: 'Guess My Number',

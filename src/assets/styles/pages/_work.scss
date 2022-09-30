@@ -1,6 +1,7 @@
 .fake-magicwall {
   height: 100vh;
   margin-left: 10vw;
+  overflow-y: scroll;
 
   @media (max-width: 1200px) {
     margin-left: 0;
