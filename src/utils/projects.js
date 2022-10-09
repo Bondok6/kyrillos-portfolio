@@ -25,6 +25,7 @@ import maptyImg from '../assets/images/projects/mapty-app.PNG';
 import maptyImg1 from '../assets/images/projects/mapty-app-1.PNG';
 import expenseTrackerImg from '../assets/images/projects/expense-tracker-1.PNG';
 import trilloImg from '../assets/images/projects/trillo.PNG';
+import nexterImg from '../assets/images/projects/nexter.PNG';
 
 // import leaderboardImg from '../assets/images/projects/Leaderboard.PNG';
 // import awesomeBooksImg from '../assets/images/projects/awesome-books.PNG';
@@ -139,6 +140,25 @@ const projects = [
     ],
   },
   {
+    img: [nexterImg, nexterImg],
+    title: 'Nexter',
+    description:
+      'Landing page for fictional company. Pure CSS website to practice advanced CSS/SCSS (SASS) and delve deeper into Grid Layout.',
+    live: 'https://bondok6.github.io/nexter/',
+    github: 'https://github.com/Bondok6/nexter/',
+    tech: ['SASS/SCSS', 'Grid Layout', 'HTML', 'SVG', 'gh-pages'],
+  },
+  {
+    img: [trilloImg, trilloImg],
+    title: 'Trillo',
+    description:
+      'A hotel booking website. Pure CSS website to practice advanced CSS/SCSS (SASS) and delve deeper into Flexbox.',
+    live: 'https://bondok6.github.io/trillo/',
+    github: 'https://github.com/Bondok6/trillo',
+    tech: ['SASS/SCSS', 'Flexbox', 'Animation', 'HTML', 'SVG', 'gh-pages'],
+  },
+
+  {
     img: [qualbyImg, qualbyImg2],
     title: 'Qualby Etmaa`n',
     description:
@@ -182,15 +202,14 @@ const projects = [
     github: 'https://github.com/Bondok6/Expense-tracker-app',
     tech: ['React', 'HTML', 'CSS-Modules', 'gh-pages'],
   },
-  {
-    img: [trilloImg, trilloImg],
-    title: 'Trillo',
-    description:
-      'A hotel booking website. Pure CSS website to practice advanced CSS/SCSS (SASS) and delve deeper into Flexbox.',
-    live: 'https://bondok6.github.io/trillo/',
-    github: 'https://github.com/Bondok6/trillo',
-    tech: ['SASS/SCSS', 'Animation', 'HTML', 'SVG', 'gh-pages'],
-  },
+  // {
+  //   img: guessGameImg,
+  //   title: 'Guess My Number',
+  //   description:
+  //     'Simple Game, Try to guess a number from 1 to 20 in the fewest number of attempts possible',
+  //   live: 'https://bondok6.github.io/Guess-My-Number/',
+  //   github: 'https://github.com/Bondok6/Guess-My-Number',
+  // },
   // {
   //   img: [zenvaImg, zenvaImg],
   //   title: 'Zenva',
@@ -226,15 +245,6 @@ const projects = [
   //   live: 'https://bondok6.github.io/countries/',
   //   github: 'https://github.com/Bondok6/countries/',
   //   tech: ['JavaScript', 'HTML', 'CSS', 'API', 'gh-pages'],
-  // },
-
-  // {
-  //   img: guessGameImg,
-  //   title: 'Guess My Number',
-  //   description:
-  //     'Simple Game, Try to guess a number from 1 to 20 in the fewest number of attempts possible',
-  //   live: 'https://bondok6.github.io/Guess-My-Number/',
-  //   github: 'https://github.com/Bondok6/Guess-My-Number',
   // },
 ];
 
