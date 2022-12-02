@@ -6,10 +6,6 @@
 https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-8cf2-035b88be64b9.mp4
 
 
-## Live Demo
-
-> [Kyrillos's Portfolio](https://kyrillos-portfolio.vercel.app/)
-
 ## Built with
 
 - React.js
