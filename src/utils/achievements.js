@@ -1,6 +1,7 @@
 import graduationImg from '../assets/images/achievements/graduation.jpeg';
 import githubRankImg from '../assets/images/achievements/github-rank.jpeg';
 import microverseAwardImg from '../assets/images/achievements/microverse-award.jpeg';
+import microverseCertImg from '../assets/images/achievements/microverse-certificate.png';
 import wizardReplyImg from '../assets/images/achievements/wizardreply.png';
 
 const achievements = [
@@ -24,6 +25,13 @@ const achievements = [
     date: '2023',
     description:
       'Recognized by Microverse as one of the developers who scored the highest in quality code reviews, after performing 500+ reviews for over 100 junior developers.',
+  },
+  {
+    img: microverseCertImg,
+    title: 'Microverse Full Stack Certification',
+    date: '2022',
+    description:
+      'Completed the remote Full Stack Web Development program at Microverse — 1300+ hours mastering algorithms, data structures, and full-stack development with Ruby, Rails, JavaScript, React, and Redux.',
   },
   {
     img: graduationImg,
