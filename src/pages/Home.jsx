@@ -18,7 +18,7 @@ const Home = () => {
         <Button text="contact me" link="/conatct" />
         <Button
           text="my resume"
-          link="https://docs.google.com/document/d/1rkT_79Hb5qYM3IEzFmh1VZJxqEaDohz1gZBjnTkI1Jw/"
+          link="https://drive.google.com/file/d/1CjFWnndQNLTENMb_R2X8rPSFWgVxre2p/view"
         />
       </div>
 

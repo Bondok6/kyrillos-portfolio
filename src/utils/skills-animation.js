@@ -546,6 +546,8 @@ const SkillsAnimation = () => {
         { label: 'Redux' },
         { label: '@toolkit' },
         { label: 'Next.js' },
+        { label: 'Stimulus.js' },
+        { label: 'TailwindCSS' },
         { label: 'OOP' },
         { label: 'JSON' },
         { label: 'ES5/ES6' },
