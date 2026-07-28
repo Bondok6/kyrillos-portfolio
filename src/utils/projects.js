@@ -26,6 +26,12 @@ import maptyImg1 from '../assets/images/projects/mapty-app-1.PNG';
 import expenseTrackerImg from '../assets/images/projects/expense-tracker-1.PNG';
 import trilloImg from '../assets/images/projects/trillo.PNG';
 import nexterImg from '../assets/images/projects/nexter.PNG';
+import helpjuiceImg from '../assets/images/projects/helpjuice.png';
+import helpjuiceImgWide from '../assets/images/projects/helpjuice-wide.png';
+import wizardshotImg from '../assets/images/projects/wizardshot.png';
+import wizardshotImgWide from '../assets/images/projects/wizardshot-wide.png';
+import outlearnImg from '../assets/images/projects/outlearn.png';
+import outlearnImgWide from '../assets/images/projects/outlearn-wide.png';
 
 // import leaderboardImg from '../assets/images/projects/Leaderboard.PNG';
 // import awesomeBooksImg from '../assets/images/projects/awesome-books.PNG';
@@ -34,6 +40,30 @@ import nexterImg from '../assets/images/projects/nexter.PNG';
 // import guessGameImg from '../assets/images/projects/guessGame.PNG';
 
 const projects = [
+  {
+    img: [helpjuiceImgWide, helpjuiceImg],
+    title: 'Helpjuice',
+    description:
+      'AI-powered knowledge base platform used by thousands of companies to create, organize, and search documentation — helping teams deflect support tickets and speed up employee onboarding.',
+    live: 'https://helpjuice.com/',
+    tech: ['Ruby on Rails', 'Stimulus.js', 'JavaScript', 'SCSS'],
+  },
+  {
+    img: [outlearnImgWide, outlearnImg],
+    title: 'Outlearn',
+    description:
+      'Platform for building AI agents for customer service. Connect your knowledge base, documents, or website and get an AI agent with its own name and personality that answers questions and takes actions.',
+    live: 'https://outlearn.com/',
+    tech: ['AI Agents', 'JavaScript', 'SaaS'],
+  },
+  {
+    img: [wizardshotImgWide, wizardshotImg],
+    title: 'Wizardshot',
+    description:
+      'Chrome extension and web app that turns a screen recording into a step-by-step tutorial automatically — built for technical writers, team leads, and knowledge managers.',
+    live: 'https://wizardshot.com/',
+    tech: ['Next.js', 'Chrome Extension', 'AI'],
+  },
   {
     img: [tasteFoodImg, tasteFoodImg2],
     title: 'Taste Food',

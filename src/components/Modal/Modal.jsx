@@ -12,7 +12,9 @@ const Modal = ({ project, closeModal }) => (
       <h2 className="modal__middle-title">{project.title}</h2>
       <div className="modal__middle-links">
         <Button text="visit site" link={project.live} cn="btn--small" />
-        <Button text="view code" link={project.github} cn="btn--small" />
+        {project.github && (
+          <Button text="view code" link={project.github} cn="btn--small" />
+        )}
       </div>
     </div>
     <div className="modal__tech">
