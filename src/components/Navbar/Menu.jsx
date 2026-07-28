@@ -17,7 +17,10 @@ const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
           <Link to="/about">About Me</Link>
         </li>
         <li className="menu__list-item">
-          <Link to="/work">My Work</Link>
+          <Link to="/work">Projects</Link>
+        </li>
+        <li className="menu__list-item">
+          <Link to="/achievements">Awards</Link>
         </li>
         <li className="menu__list-item">
           <Link to="/contact">Contact Me</Link>

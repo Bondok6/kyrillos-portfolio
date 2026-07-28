@@ -14,7 +14,10 @@ const Sidebar = () => (
         <Link to="/about">About</Link>
       </li>
       <li className="sidebar__list-item">
-        <Link to="/work">My Work</Link>
+        <Link to="/work">Projects</Link>
+      </li>
+      <li className="sidebar__list-item">
+        <Link to="/achievements">Awards</Link>
       </li>
       <li className="sidebar__list-item">
         <Link to="/contact">Contact</Link>
