@@ -13,7 +13,7 @@ There is no ESLint config in this repo; Stylelint is the only enforced linter.
 
 ## Architecture
 
-Personal portfolio SPA built with Create React App, React Router v6, and SCSS. Deployed on Vercel.
+Personal portfolio SPA built with Create React App, React Router v6, and SCSS. Production is Cloudflare Workers at https://kyrillos.me, built from `main` by Cloudflare Workers Builds. A Vercel deployment (`kyrillos-portfolio.vercel.app`) also builds from `main` and serves the same site.
 
 - **Routing**: `src/App.js` defines all routes (`/`, `/about`, `/work`, `/contact`, `*` → Error). Pages live in `src/pages/` and are re-exported through `src/pages/index.js`. The header swaps between `Sidebar` and full-screen `Menu` based on `isMenuOpen` state held in `App`.
 

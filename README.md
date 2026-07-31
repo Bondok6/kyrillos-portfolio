@@ -2,6 +2,10 @@
 
 > ### A website that exemplifies my skills, projects, qualifications, education, experiences, and resume.
 
+## Live Demo
+
+[https://kyrillos.me](https://kyrillos.me)
+
 
 https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-8cf2-035b88be64b9.mp4
 
@@ -20,7 +24,7 @@ https://user-images.githubusercontent.com/45231276/190944084-23f002ec-6b46-4771-
 - 3D-animation
 - Leaflet.js
 - Google Fonts
-- Vercel
+- Cloudflare Workers
 
 ## Getting Started
 
